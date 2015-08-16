@@ -1,0 +1,21 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/background_light</item>
+        <!--<item name="android:colorBackground">@color/custom_theme_color</item>-->
+    </style>
+
+
+
+    <style name="SigninButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <color name="text_edit_disable">@android:color/darker_gray</color>
+    <color name="text_edit_enable">#434343</color>
+</resources>
