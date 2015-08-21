@@ -50,7 +50,7 @@ public class MapActivity extends ActionBarActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
+        //getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
@@ -108,10 +108,7 @@ public class MapActivity extends ActionBarActivity {
 
 
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="http://10.0.2.2/KrasEvent/api/UserAPI.php?act=LoginUser&login=test&pass=test";
-        String url2 = "http://www.googleapis.com/customsearch/v1?key=AIzaSyBmSXUzVZBKQv9FJkTpZXn0dObKgEQOIFU&cx=014099860786446192319:t5mr0xnusiy&q=AndroidDev&alt=json&searchType=image";
-        String url3 = "http://10.0.2.2/KrasEvent/api/UserAPI.php?act=CreateUser&login=test&name=test&pass=test";
-        String getEvent = "http://10.0.2.2/KrasEvent/api/EventAPI.php?act=GetEventsByFilter&public_type=all&user_api_key=29c3d379de43e28c5f2657db3b96eaf11f5d308a0ae3a2083913313ecaf630e8";
+        String getEvent = Global.host + "EventAPI.php?act=GetEventsByFilter&public_type=all&user_api_key=" + Global.APIkey;
 
         JsonObjectRequest jsObjRequest = new JsonObjectRequest(Request.Method.GET, getEvent, null, new Response.Listener<JSONObject>() {
 

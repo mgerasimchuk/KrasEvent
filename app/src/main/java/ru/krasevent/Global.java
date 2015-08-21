@@ -10,7 +10,6 @@ import android.widget.AdapterView;
 
 import com.mikepenz.iconics.typeface.FontAwesome;
 import com.mikepenz.materialdrawer.Drawer;
-import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SectionDrawerItem;
@@ -96,13 +95,15 @@ public class Global {
                                                }
                 )
                 .addDrawerItems(
+                        new SectionDrawerItem().withName("Профиль"),
                         new PrimaryDrawerItem().withName(R.string.drawer_item_map).withIcon(FontAwesome.Icon.faw_globe).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(R.string.drawer_item_free_play).withIcon(FontAwesome.Icon.faw_gamepad),
-                        new PrimaryDrawerItem().withName(R.string.drawer_item_custom).withIcon(FontAwesome.Icon.faw_eye).withBadge("6").withIdentifier(2),
+                        /*new PrimaryDrawerItem().withName(R.string.drawer_item_free_play).withIcon(FontAwesome.Icon.faw_gamepad),*/
+                        /*new PrimaryDrawerItem().withName(R.string.drawer_item_custom).withIcon(FontAwesome.Icon.faw_eye).withBadge("6").withIdentifier(2),*/
                         new SectionDrawerItem().withName(R.string.drawer_item_settings),
-                        new SecondaryDrawerItem().withName(R.string.drawer_item_help).withIcon(FontAwesome.Icon.faw_cog),
-                        new SecondaryDrawerItem().withName(R.string.drawer_item_open_source).withIcon(FontAwesome.Icon.faw_question).setEnabled(false),
-                        new DividerDrawerItem(),
+                        new SecondaryDrawerItem().withName(/*R.string.drawer_item_help*/"Настройки").withIcon(FontAwesome.Icon.faw_cog),
+                        /*new SecondaryDrawerItem().withName(R.string.drawer_item_open_source).withIcon(FontAwesome.Icon.faw_question).setEnabled(false),*/
+                      /*  new DividerDrawerItem(),*/
+                        new SectionDrawerItem().withName("Авторизация"),
                         new SecondaryDrawerItem().withName(R.string.drawer_item_login).withIcon(FontAwesome.Icon.faw_sign_in).withIdentifier(3)
                 ).withOnDrawerListener(new Drawer.OnDrawerListener() {
                     @Override
