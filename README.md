@@ -21,7 +21,7 @@ EventAPI:
 - CreateEvent($name, $note, $image, $geo, $address, $stime, $ftime, $ispublic, $category, $type, $user_api_key);
 - GetEventsByFilter($public_type, $user_api_key).
 
-## Система должна иметь следующие основные функции:
+## Задачи:
 
 ### USER:
 - Авторизация/регистрация пользователей;
