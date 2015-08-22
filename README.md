@@ -12,6 +12,15 @@
 ### Структура БД back-end части:
 ![Структура БД](http://s020.radikal.ru/i715/1508/f9/6ba388604aa7.png)
 
+### API:
+UserAPI:
+- CreateUser($login, $pass, $name);
+- LoginUser($login, $pass, $via_social).
+
+EventAPI:
+- CreateEvent($name, $note, $image, $geo, $address, $stime, $ftime, $ispublic, $category, $type, $user_api_key);
+- GetEventsByFilter($public_type, $user_api_key).
+
 ## Система должна иметь следующие основные функции:
 
 ### USER:
