@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <!--TODO: Update blank fragment layout-->
+
+    <EditText
+        android:id="@+id/view_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название"
+        android:editable="true"
+        android:linksClickable="false"
+        android:backgroundTint="#ff2b2b2b"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/view_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Описание"
+        android:editable="true"
+        android:linksClickable="false"
+        android:backgroundTint="#ff2b2b2b"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <EditText
+            android:id="@+id/view_geo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Альтитуда, лонгитуда"
+            android:editable="false"
+            android:linksClickable="false"
+            android:backgroundTint="#ff2b2b2b"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:id="@+id/view_map_btn" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/view_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Адресс"
+        android:editable="true"
+        android:linksClickable="false"
+        android:backgroundTint="#ff2b2b2b"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/view_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Начало(2015-09-26 14:00:00)"
+        android:editable="true"
+        android:linksClickable="false"
+        android:backgroundTint="#ff2b2b2b"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/view_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Конец(2015-09-26 18:00:00)"
+        android:editable="true"
+        android:linksClickable="false"
+        android:backgroundTint="#ff2b2b2b"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Публиковать для всех"
+        android:id="@+id/view_ispublic"
+        android:layout_gravity="center_horizontal"
+        android:hint="Публиковать для всех"
+        android:backgroundTint="#ff2b2b2b"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:singleLine="false"
+        android:checked="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            style="@style/SigninButton"
+            android:id="@+id/view_create"
+            android:background="#ff2b2b2b"
+            android:text="Создать"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"/>
+
+        <ProgressBar
+            style="@android:style/Widget.Holo.ProgressBar"
+            android:id="@+id/view_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/view_create"
+            android:layout_alignTop="@id/view_create"
+            android:layout_alignBottom="@id/view_create"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

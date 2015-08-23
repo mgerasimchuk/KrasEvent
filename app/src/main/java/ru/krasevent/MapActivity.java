@@ -37,7 +37,7 @@ public class MapActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
-        drawerResult = Global.setUpNavigationDrawer(this, drawerResult);
+        //drawerResult = Global.setUpNavigationDrawer(this, drawerResult);
 
         setUpMapIfNeeded();
     }
@@ -49,7 +49,7 @@ public class MapActivity extends ActionBarActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+         public boolean onCreateOptionsMenu(Menu menu) {
         //getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }

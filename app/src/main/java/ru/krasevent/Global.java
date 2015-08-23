@@ -63,11 +63,17 @@ public class Global {
                                                                activity.startActivity(intent);
 
                                                                break;
+                                                           /** CreateEvent */
+                                                           case 2:
+                                                               activity.getSupportFragmentManager().beginTransaction().replace(R.id.fragment, new CreateEventFragment()).commit();
+                                                               break;
 
                                                            /** Login */
                                                            case 3:
                                                                activity.getSupportFragmentManager().beginTransaction().replace(R.id.fragment, new LoginFragment()).commit();
                                                                break;
+
+
                                                        }
 
 
@@ -97,6 +103,7 @@ public class Global {
                 .addDrawerItems(
                         new SectionDrawerItem().withName("Профиль"),
                         new PrimaryDrawerItem().withName(R.string.drawer_item_map).withIcon(FontAwesome.Icon.faw_globe).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(R.string.drawer_item_add).withIcon(FontAwesome.Icon.faw_plus).withIdentifier(2),
                         /*new PrimaryDrawerItem().withName(R.string.drawer_item_free_play).withIcon(FontAwesome.Icon.faw_gamepad),*/
                         /*new PrimaryDrawerItem().withName(R.string.drawer_item_custom).withIcon(FontAwesome.Icon.faw_eye).withBadge("6").withIdentifier(2),*/
                         new SectionDrawerItem().withName(R.string.drawer_item_settings),

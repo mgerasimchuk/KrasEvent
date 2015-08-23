@@ -18,7 +18,8 @@
         android:linksClickable="false"
         android:backgroundTint="#ff2b2b2b"
         android:textColorHint="@android:color/darker_gray"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black"
+        android:text="test" />
 
     <EditText
         android:id="@+id/view_password"
@@ -30,7 +31,8 @@
         android:backgroundTint="#ff2b2b2b"
         android:textColorHint="@android:color/darker_gray"
         android:textColor="@android:color/black"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:text="test" />
 
     <RelativeLayout
         android:layout_width="match_parent"
