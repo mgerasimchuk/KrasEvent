@@ -22,7 +22,7 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 public class Global {
 
     /** URL сервера с API */
-    public static String host = "http://10.0.2.2/KrasEvent/api/";
+    public static String host = "http://krassevent.esy.es/";//http://10.0.2.2/KrasEvent/api/";
     /** уникальный ключ с помощью которого выполняются API */
     public static String APIkey = "29c3d379de43e28c5f2657db3b96eaf11f5d308a0ae3a2083913313ecaf630e8";
     public static Boolean isLogin = true;
